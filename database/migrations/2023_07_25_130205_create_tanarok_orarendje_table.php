@@ -12,8 +12,11 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tanarok_orarendje', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->id("to_id");
+            $table->integer("tanar_id");
+            $table->integer("het_napjai");
+            $table->timestamps("start");
+            $table->timestamps("stop");
         });
     }
 

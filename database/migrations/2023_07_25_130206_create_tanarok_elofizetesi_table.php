@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('tanarok_elofizetesi', function (Blueprint $table) {
             $table->id("te_id");
-            $table->timestamps("ido");
+            $table->timestamp("ido");
             $table->integer("osszeg");
             $table->integer("tanar_id");
         });

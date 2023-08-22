@@ -15,9 +15,9 @@ return new class extends Migration
             $table->id("bt_id");
             $table->integer("payment_id");
             $table->string("status");
-            $table->timestamps("letrehozas_ideje");
+            $table->timestamp("letrehozas_ideje");
             $table->integer("total");
-            $table->timestamps("fizetes_ideje");
+            $table->timestamp("fizetes_ideje")->useCurrent();
             $table->string("get_data");
         });
     }

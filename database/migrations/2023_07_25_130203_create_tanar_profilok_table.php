@@ -21,7 +21,7 @@ return new class extends Migration
             $table->integer("telefonszam");
             $table->string("email");
             $table->integer("oradij");
-            $table->timestamps("elofizetes_lejarata");
+            $table->timestamp("elofizetes_lejarata");
         });
     }
 

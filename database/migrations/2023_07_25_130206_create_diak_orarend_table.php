@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id("do_id");
             $table->integer("u_id");
             $table->integer("tanar_id");
-            $table->timestamps("datum");
-            $table->timestamps("ido");
+            $table->timestamp("datum");
+            $table->timestamp("ido")->nullable();
             $table->boolean("fizetve");
-            $table->timestamps("created_at");
+            $table->timestamp("created_at")->nullable();
             $table->integer("payment_id");
         });
     }
