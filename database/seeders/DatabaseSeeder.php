@@ -15,14 +15,17 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('users')->insert([
+        /*DB::table('users')->insert([
             ''
-        ])
+        ])*/
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+         $this->call([
+             tanar_profilokSeeder::class,
+         ]);
     }
 }
