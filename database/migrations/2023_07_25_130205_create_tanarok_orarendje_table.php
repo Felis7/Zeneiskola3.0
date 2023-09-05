@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id("to_id");
             $table->integer("tanar_id");
             $table->integer("het_napjai");
-            $table->timestamps("start");
-            $table->timestamps("stop");
+            $table->timestamp("start");
+            $table->timestamp("stop");
         });
     }
 
