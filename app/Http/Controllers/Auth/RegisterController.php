@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use App\Models\Userjogok;
+use App\Models\Userjogkor;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -74,8 +74,8 @@ class RegisterController extends Controller
 
         
     UserJogkor::create([
-        'user_id' => $user['id'],
-        'jogkor_id' => $data['user_type']
+        'uj_id' => $user['uj_id'],
+        'nev' => $data['user_type']
     ]);
 
     return $user;
