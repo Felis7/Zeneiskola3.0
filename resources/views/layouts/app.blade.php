@@ -33,14 +33,14 @@
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Főoldal</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Tanárkereső</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Hangszerpiac</button></a>
+     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Felhasználóiprofil</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">GY.Í.K.</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Kapcsolat</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Felhasználóiprofil</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Regisztáció</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Kijelentkezés</button></a>
     </div>
   </nav>
-    <main class="py-4">
+    <main class="py-4 ms-5">
         @yield('content')
     </main>
 </body>

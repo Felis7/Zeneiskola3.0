@@ -71,12 +71,14 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
             'user_type' => "0"
         ]);
+
         
     UserJogkor::create([
         'user_id' => $user['id'],
         'jogkor_id' => $data['user_type']
-    ])
+    ]);
 
-        return $user;
+    return $user;
+    
     }
 }
