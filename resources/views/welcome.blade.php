@@ -2,7 +2,10 @@
 
 @section('content')
 <div class="container-fluid">
+  <form method="GET">
     <div class="row">
+    
+            
         <div class="col-3">
             <div class="card" style="width:400px">
                 <img class="card-img-top" src="img_avatar1.png" alt="Card image">
@@ -13,6 +16,7 @@
                 </div>
               </div>
         </div>
+      </form>
         <div class="col-3">
             <div class="card" style="width:400px">
                 <img class="card-img-top" src="img_avatar1.png" alt="Card image">

@@ -30,7 +30,7 @@
 
 <nav class="navbar navbar-expand-sm navbar-dark fixed" id="navbar">
     <div id="navbar" class="w-100">
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Főoldal</button></a>
+     <a href="{{route('home')}}"><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Főoldal</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Tanárkereső</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Hangszerpiac</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Felhasználóiprofil</button></a>
@@ -43,5 +43,7 @@
     <main class="py-4 ms-5">
         @yield('content')
     </main>
+    
+    <x-footer />
 </body>
 </html>

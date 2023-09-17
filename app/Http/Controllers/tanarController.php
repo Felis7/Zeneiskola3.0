@@ -11,7 +11,7 @@ use App\Models\Tanar;
 class tanarController extends Controller
 {
     public function tanarListazas(Request $req){
-         $tanarok = Tanar::query();
+         $tanarok = tanar_profilok::query();
          $nev = "";
          $tantargy = "";
          $cim = "";
@@ -25,5 +25,9 @@ class tanarController extends Controller
             $tanarok->where('nev', 'like', '%' . $req->get('nev') . '%');
             
         }
+        $tanarok = $tanarok->get();
+
+
+        return view("welcome",["tanarok" => $tanarok]);
     }
 }

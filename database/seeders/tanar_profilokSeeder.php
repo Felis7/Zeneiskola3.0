@@ -20,7 +20,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 1',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-01'
@@ -31,7 +31,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
@@ -42,7 +42,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 3',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-11'
@@ -53,7 +53,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 5',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-21'
@@ -63,7 +63,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 55',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-20'
@@ -74,7 +74,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
@@ -85,7 +85,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 62',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-25'
@@ -95,7 +95,7 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 255',
-            'telefonszam' => 06012345678,
+            'telefonszam' => 6012345678,
             'email' => 'teszt@teszt.com',
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-21'
