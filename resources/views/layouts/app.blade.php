@@ -31,7 +31,7 @@
 <nav class="navbar navbar-expand-sm navbar-dark fixed" id="navbar">
     <div id="navbar" class="w-100">
      <a href="{{route('home')}}"><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Főoldal</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Tanárkereső</button></a>
+     <a href="{{route('kereso')}}"><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Tanárkereső</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Hangszerpiac</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Felhasználóiprofil</button></a>
      <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">GY.Í.K.</button></a>

@@ -21,5 +21,6 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [tanarController::class, 'tanarListazas'])->name('home');
+Route::get('/kereso', [tanarController::class, 'tanarKereso'])->name('kereso');
 
 
