@@ -6,6 +6,7 @@ use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Str;
+use App\Models\Tanar;
 
 class tanar_profilokSeeder extends Seeder
 {
@@ -14,14 +15,16 @@ class tanar_profilokSeeder extends Seeder
      */
     public function run(): void
     {
-        $tanarok = [[
+        $tanarok= [
+            [
             'nev' => 'Gipsz Jakab',
             'leiras' => '10 éve foglalkozok énekléssel',
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 1',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc1.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-01'
         ],
@@ -31,8 +34,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc2.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
         ],
@@ -42,8 +46,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 3',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc3.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-11'
         ],
@@ -53,8 +58,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 5',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc3.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-21'
         ],[
@@ -63,8 +69,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 55',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc4.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-20'
         ],
@@ -74,8 +81,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc5.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
         ],
@@ -85,8 +93,9 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 62',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc6.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-25'
         ],[
@@ -95,11 +104,20 @@ class tanar_profilokSeeder extends Seeder
             'irsz' => 1007,
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 255',
-            'telefonszam' => 6012345678,
+            'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
+            'url_kep' => "img/arc7.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-21'
         ]
-        ];
+
+            ];
+       
+            foreach($tanarok as $egyTanar){
+                Tanar::create($egyTanar);
+            }
+        
+        
+        
     }
 }

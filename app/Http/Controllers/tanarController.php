@@ -10,8 +10,12 @@ use App\Models\Tanar;
 
 class tanarController extends Controller
 {
-    public function tanarListazas(Request $req){
-         $tanarok = Tanar::query();
+    public function tanarListazas(){
+            $tanarok = Tanar::all();
+
+
+            return view('welcome', ['tanarok' => $tanarok]);
+         }
          $nev = "";
          $tantargy = "";
          $cim = "";

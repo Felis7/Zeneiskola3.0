@@ -8,22 +8,28 @@
     margin-right: 10px;
     box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
 }
-.footer{
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
+.navbar{
+    border-style: solid;
+}
+.nav-item{
+    border-style: solid;
+    border-color: black;
+    margin-left: 35px;
+    background-color: rgba(0, 255, 21, 0.5);
+    font-weight: bold;
+}
+
+.nav-item:hover{
+    background-color: rgba(0, 255, 21, 0.8);
+
+}
+#banner{
+    border-style: solid;
+    border-color: black;
 }
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    
     background-color: #1e373e;
     text-align: center;
     color: #47c029;
-    padding: 10px 0;
 }

@@ -10,9 +10,10 @@ class Tanar extends Model
 {
     use HasFactory;
     public $table = "tanar_profilok";
+    protected $primaryKey = 'tanar_id';
     public $timestamps = false;
     protected $guarded = [];
-    protected $primaryKey = 'tanar_id';
+    
 
     public function tantargy(): BelongsToMany{
         return $this->belongsToMany(Tantargy::class,'nev',"tanar_id","tantargy_id");

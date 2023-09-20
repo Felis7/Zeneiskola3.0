@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>@yield('title')</title>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.bunny.net">
@@ -21,26 +21,39 @@
     <div class="container-fluid">
     <div class="row">
         <div class="col-12 bg-success text-primary pt-3">
-            <img src="{{ asset('img/szintenzeneszbanner.jpg') }}" alt="Banner" class="img-fluid">
+            <img src="{{ asset('img/szintenzeneszbanner.jpg') }}" alt="Banner" class="img-fluid" id="banner">
         </div>
         
     </div>
    </div>
-</div>
-
-<nav class="navbar navbar-expand-sm navbar-dark fixed" id="navbar">
-    <div id="navbar" class="w-100">
-     <a href="{{route('home')}}"><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Főoldal</button></a>
-     <a href="{{route('kereso')}}"><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Tanárkereső</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Hangszerpiac</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Felhasználóiprofil</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">GY.Í.K.</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Kapcsolat</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Regisztáció</button></a>
-     <a><button type="button" class="btn btn-success mb-2 mx-5 btn-lg">Kijelentkezés</button></a>
+<nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid" id="navbar">   
+    <div class="row">
+        <div class="col-6">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Kezdőlap</a>
+        </li>
+       <li class="nav-item">
+          <a class="nav-link active" href="#">Tanárkereső</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Hangszerpiac</a>
+        </li>
+    </ul>
     </div>
+    <div class="col-6">
+    <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Kezdőlap</a>
+              </li>
+             <li class="nav-item">
+                <a class="nav-link active" href="#">Tanárkereső</a>
+              </li>
+            </ul>
+        </div>
+</div>
   </nav>
-    <main class="py-4 ms-5">
+    <main class="py-4">
         @yield('content')
     </main>
     
