@@ -15,13 +15,13 @@ class Tanar extends Model
     protected $guarded = [];
     
 
-    public function tantargy(): BelongsToMany{
-        return $this->belongsToMany(Tantargy::class,'nev',"tanar_id","tantargy_id");
+    public function tanarok_tantargyai(): BelongsToMany{
+        return $this->belongsToMany(Tantargy::class,'tanarok_tantargyai',"tanar_id","tanar_id");
     }
-    public function ertekeles(): BelongsToMany{
-        return $this->belongsToMany(Tantargy::class,'star',"tanar_id","tan_ert_id");
+    public function diak_orarend(): BelongsToMany{
+        return $this->belongsToMany(diak_orarend::class,'diak_orarend', 'tanar_id',"tanar_id");
     }
-    public function orarend(): BelongsToMany{
-        return $this->belongsToMany(Tantargy::class,'datum',"tanar_id","do_id");
+    public function tanarok_orarendje(): BelongsToMany{
+        return $this->belongsToMany(tanarok_orarendje::class,'tanarok_orarendje',"tanar_id","tanar_id");
     }
 }

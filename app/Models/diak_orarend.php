@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
-class Tantargy extends Model
+class diak_orarend extends Model
 {
     use HasFactory;
-    public $table = "tantargyak";
+    public $table = "diak_orarend";
+    protected $primaryKey = 'do_id';
     public $timestamps = false;
-    protected $primaryKey = "tantargy_id";
     protected $guarded = [];
 
-    public function 
 }
