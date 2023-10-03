@@ -24,7 +24,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 1',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc1.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-01'
         ],
@@ -36,7 +35,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc2.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
         ],
@@ -48,7 +46,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 3',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc3.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-11'
         ],
@@ -60,7 +57,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 5',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc3.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-21'
         ],[
@@ -71,7 +67,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 55',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc4.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-20'
         ],
@@ -83,7 +78,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc5.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-01'
         ],
@@ -95,7 +89,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 62',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc6.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-05-25'
         ],[
@@ -106,7 +99,6 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 255',
             'telefonszam' => 112345678,
             'email' => 'teszt@teszt.com',
-            'url_kep' => "img/arc7.jpg",
             'oradij' => 5000,
             'elofizetes_lejarata' => '2024-07-21'
         ]

@@ -20,7 +20,6 @@ return new class extends Migration
             $table->string("cim", 40);
             $table->integer("telefonszam");
             $table->string("email");
-            $table->string("url_kep", 100);
             $table->integer("oradij");
             $table->timestamp("elofizetes_lejarata");
         });

@@ -26,7 +26,7 @@
         
     </div>
    </div>
-<nav class="navbar navbar-expand-sm bg-light navbar-light container-fluid" id="navbar">   
+<nav class="navbar-expand-sm bg-light navbar-light container-fluid" id="navbar">   
     <div class="row">
         <div class="col-6">
       <ul class="navbar-nav">
@@ -41,13 +41,13 @@
         </li>
     </ul>
     </div>
-    <div class="col-6">
+    <div class="col-6 d-flex justify-content-end">
     <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Kezdőlap</a>
+                <a class="nav-link active" href="#">Belépés</a>
               </li>
              <li class="nav-item">
-                <a class="nav-link active" href="#">Tanárkereső</a>
+                <a class="nav-link active" href="#">Regisztráció</a>
               </li>
             </ul>
         </div>

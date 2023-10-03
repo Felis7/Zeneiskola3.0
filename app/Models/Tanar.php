@@ -10,9 +10,9 @@ class Tanar extends Model
 {
     use HasFactory;
     public $table = "tanar_profilok";
-    protected $primaryKey = 'tanar_id';
+    public $primaryKey = 'tanar_id';
     public $timestamps = false;
-    protected $guarded = [];
+    public $guarded = [];
     
 
     public function tanarok_tantargyai(): BelongsToMany{

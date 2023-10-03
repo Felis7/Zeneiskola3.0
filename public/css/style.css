@@ -12,11 +12,9 @@
     border-style: solid;
 }
 .nav-item{
-    border-style: solid;
-    border-color: black;
     margin-left: 35px;
+    margin-right: 35px;
     background-color: rgba(0, 255, 21, 0.5);
-    font-weight: bold;
 }
 
 .nav-item:hover{
@@ -28,7 +26,8 @@
     border-color: black;
 }
 footer {
-    
+    position: absolute;
+    bottom: 0;
     background-color: #1e373e;
     text-align: center;
     color: #47c029;

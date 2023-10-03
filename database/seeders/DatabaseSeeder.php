@@ -27,5 +27,8 @@ class DatabaseSeeder extends Seeder
          $this->call([
              tanar_profilokSeeder::class,
          ]);
+         $this->call([
+            tantargyakSeeder::class,
+         ]);
     }
 }
