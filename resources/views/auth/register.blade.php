@@ -40,12 +40,11 @@
                         </div>
 
                         <div class="row mb-3">
-                        <label for="user_type" class="col-md-4 col-form-label text-md-end">Tanárként vagy diákként akarsz regisztrálni?</label>
+                        <label for="user_type" class="col-md-4 col-form-label text-md-end">Tanárként akarsz regisztrálni?</label>
                             <div class="col-md-6">
                                 <select name="user_type" id="user_type" class="form-control">
-                                    <option value="">Kérjük válassz!</option>
-                                    <option value="1">Tanár</option>
-                                    <option value="2">Diák</option>
+                                    <option value="1">Igen</option>
+                                    <option value="2">Nem</option>
                                 </select>
                             </div>
                         </div>
