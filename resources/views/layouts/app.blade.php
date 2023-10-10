@@ -21,7 +21,7 @@
     <div class="container-fluid">
     <div class="row">
         <div class="col-12 bg-success text-primary pt-3">
-            <img src="{{ asset('img/szintenzeneszbanner.jpg') }}" alt="Banner" class="img-fluid" id="banner">
+            <img src="{{ asset('img/szintenzeneszbanner.webp') }}" alt="Banner" class="img-fluid" id="banner">
         </div>
         
     </div>

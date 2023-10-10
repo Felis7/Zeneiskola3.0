@@ -8,7 +8,7 @@
       <?php if($count == 4) break; ?>
       <div class="col-3">
       <div class="card">
-        <img class="card-img-top" src="{{$tanar->url_kep}}" alt="Profil kép">
+        <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
         <div class="card-body">
           <h4 class="card-title">{{$tanar->nev}}</h4>
           <p class="card-text">{{ $tanar->leiras}}</p>
