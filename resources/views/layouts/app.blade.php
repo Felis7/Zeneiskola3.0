@@ -31,23 +31,23 @@
         <div class="col-6">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" href="#">Kezdőlap</a>
+          <a class="nav-link active p-2 fs-5" href="#">Kezdőlap</a>
         </li>
        <li class="nav-item">
-          <a class="nav-link active" href="#">Tanárkereső</a>
+          <a class="nav-link active p-2 fs-5" href="#">Tanárkereső</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" href="#">Hangszerpiac</a>
+          <a class="nav-link active p-2 fs-5" href="#">Hangszerpiac</a>
         </li>
     </ul>
     </div>
     <div class="col-6 d-flex justify-content-end">
     <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link active" href="#">Belépés</a>
+                <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
               </li>
              <li class="nav-item">
-                <a class="nav-link active" href="#">Regisztráció</a>
+                <a class="nav-link active p-2 fs-5" href="#">Regisztráció</a>
               </li>
             </ul>
         </div>
