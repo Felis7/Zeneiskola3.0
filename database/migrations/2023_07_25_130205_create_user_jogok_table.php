@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('user_jogok', function (Blueprint $table) {
             $table->id("ujo_id");
-            $table->integer("u_id");
-            $table->integer("uj_id");
+            $table->foreignId("u_id")->references("id")->on("users")->onDelete('cascade');
+            $table->foreignId("uj_id")->references("uj_id")->on("user_jogkorok")->onDelete('cascade');
         });
     }
 

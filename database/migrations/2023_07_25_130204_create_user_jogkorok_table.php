@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('user_jogkorok', function (Blueprint $table) {
             $table->id("uj_id");
-            $table->string("nev");
+            $table->string("nev", 255);
         });
     }
 

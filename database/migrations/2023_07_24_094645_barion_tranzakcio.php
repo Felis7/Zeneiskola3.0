@@ -13,7 +13,6 @@ return new class extends Migration
     {
         Schema::create('barion_tranzakcio', function (Blueprint $table) {
             $table->id("bt_id");
-            $table->integer("payment_id");
             $table->string("status");
             $table->timestamp("letrehozas_ideje");
             $table->integer("total");
