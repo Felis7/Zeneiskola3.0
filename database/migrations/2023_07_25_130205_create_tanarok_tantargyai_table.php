@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('tanarok_tantargyai', function (Blueprint $table) {
             $table->id("tan_tan_id");
             $table->foreignId("tanar_id")->references("tanar_id")->on("tanar_profilok")->onDelete('cascade');
-            $table->integer("tantargy_id")->references("tantargy_id")->on("tantargyak")->onDelete('cascade');
+            $table->foreignId("tantargy_id")->references("tantargy_id")->on("tantargyak")->onDelete('cascade');
         });
     }
 
