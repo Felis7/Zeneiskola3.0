@@ -1,4 +1,4 @@
-    <footer class="container-fluid">
+    <footer class="container-fluid fixed-bottom">
             <div class="row">
                 <div class="col-6">
                     <p>&copy; 2023 SzinténZenész</p>
