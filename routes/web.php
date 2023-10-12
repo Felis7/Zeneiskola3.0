@@ -11,4 +11,4 @@ Route::get('/kereso', [tanarController::class, 'tanarKereso'])->name('kereso');
 
 
 Route::get('/',[tanarController::class,'tanarListazas']);
-Route::get('/regisztracio',function(){return view('regisztacio');})->name('regisztracio');
+Route::get('/regisztracio',function(){return view('regisztracio');})->name('regisztracio');
