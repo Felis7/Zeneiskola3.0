@@ -11,6 +11,9 @@
           <label for="nevInput" class="form-label">Név:</label>
           <input type="text" class="form-control" id="nevInput" name="nevInput">
 
+          <label for="kepInput" class="form-label">Profilkép:</label>
+          <input type="file" class="form-control" id="kepInput" name="kepInput">
+
           <label for="leirasInput" class="form-label mt-3">Magadról:</label>
           <textarea name="leirasInput" id="leirasInput" cols="30" rows="3" class="form-control"></textarea>
 
