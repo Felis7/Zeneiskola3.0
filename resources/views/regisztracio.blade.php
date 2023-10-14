@@ -27,7 +27,7 @@
           <input type="text" name="cimInput" id="cimInput" class="form-control">
 
           <label for="telszamInput" class="form-label mt-3">Telefonszám:</label>
-          <input type="number" name="telszamInput" id="telszamInput" class="form-control">
+          <input type="tel" name="telszamInput" id="telszamInput" class="form-control">
 
           <label for="emailInput" class="form-label mt-3">E-mail:</label>
           <input type="text" name="emailInput" id="emailInput" class="form-control">
