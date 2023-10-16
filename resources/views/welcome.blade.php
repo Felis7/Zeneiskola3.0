@@ -21,10 +21,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <form action="POST" enctype="multipart/form-data">
-          <input type="file" name="fajl" id="fajl">Fájl
-          <button type="submit"></button>
-        </form>
+          
         </div>
       </div>
     </div>

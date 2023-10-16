@@ -18,9 +18,10 @@ return new class extends Migration
             $table->integer("total");
             $table->timestamp("fizetes_ideje")->useCurrent();
             $table->string("get_data");
+            $table->foreignId("tanar_id")->references("tanar_id")->on("tanar_profilok");
         });
+        
     }
-
     /**
      * Reverse the migrations.
      */
