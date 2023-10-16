@@ -7,6 +7,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Validator;
 use App\Models\Tanar;
 use Illuminate\Support\Facades\Log;
+use App\Models\Tantargy;
 
 
 
@@ -15,7 +16,8 @@ class tanarController extends Controller
     //az a nev ami a route-ba van
 
          public function tanarListazas(){
-            $tanarok = Tanar::all();
+            
+            $tanarok = Tanar::where("telepules","LIKE","Cegléd")->paginate(4);
             return view('welcome',['tanarok' => $tanarok]);
         }
     
@@ -43,6 +45,8 @@ class tanarController extends Controller
     
     public function tanarKereso(Request $req){
          $tanarok = Tanar::query();
+         $telepulesek = Tanar::select("telepules")->groupBy("telepules")->get();
+         $tantargyak = Tantargy::select("tantargy_id", "nev")->get();
          $nev = "";
          $tantargy = "";
          $cim = "";
@@ -51,14 +55,22 @@ class tanarController extends Controller
          $leiras = "";
          $oradij = "";
 
-         if ($req->get('nev') != "") {
-            $nev = $req->get('nev');
-            $tanarok->where('nev', 'like', '%' . $req->get('nev') . '%');
-            
+         
+         if ($req->get('telepules') != ""){
+             $telepules = $req->get('telepules');
+             $tanarok->where('telepules', 'like', '%' . $telepules . '%');
+         }
+        
+        if ($req->get('tantargy_id') != ""){
+            $tantargy_id = $req->get('tantargy_id');
+            $tanarok->whereHas('tanarok_tantargyai',function($query) use ($tantargy_id){
+                $query->where('tantargy_id',$tantargy_id);
+            });
         }
-        $tanarok = $tanarok->get();
+        
+        $tanarok = $tanarok->paginate(2);
 
-        return view("tanarKereso",["tanarok" => $tanarok]);
+        return view("tanarKereso",["tanarok" => $tanarok, "telepulesek"=> $telepulesek, "tantargyak"=> $tantargyak]);
     }
 
 }
