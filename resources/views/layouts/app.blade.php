@@ -31,13 +31,13 @@
         <div class="col-6">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active p-2 fs-5" href="#">Kezdőlap</a>
+          <a class="nav-link active p-2 fs-5" href="{{route("home")}}">Kezdőlap</a>
         </li>
        <li class="nav-item">
           <a class="nav-link active p-2 fs-5" href="#">Tanárkereső</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active p-2 fs-5" href="#">Hangszerpiac</a>
+          <a class="nav-link active p-2 fs-5" href="{{route("regisztracio")}}">Hangszerpiac</a>
         </li>
     </ul>
     </div>

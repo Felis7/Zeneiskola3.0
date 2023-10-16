@@ -11,7 +11,12 @@
         <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
         <div class="card-body">
           <h4 class="card-title">{{$tanar->nev}}</h4>
-          <p class="card-text">{{ $tanar->leiras}}</p>
+          <p class="card-text">
+            Oktatott tantargy(ak):
+            @foreach ($tanar->tanarok_tantargyai as $targy)
+               {{$targy->nev}},
+            @endforeach          
+          </p>
           <a href="#" class="btn btn-success">Írány a profil</a>
           <?php $count++; ?>
         </div>

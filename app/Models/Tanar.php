@@ -16,7 +16,7 @@ class Tanar extends Model
     
 
     public function tanarok_tantargyai(): BelongsToMany{
-        return $this->belongsToMany(Tantargy::class,'tanarok_tantargyai',"tanar_id","tanar_id");
+        return $this->belongsToMany(Tantargy::class,'tanarok_tantargyai',"tanar_id","tantargy_id");
     }
     public function diak_orarend(): BelongsToMany{
         return $this->belongsToMany(diak_orarend::class,'diak_orarend', 'tanar_id',"tanar_id");
