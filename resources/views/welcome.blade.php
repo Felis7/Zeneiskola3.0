@@ -12,7 +12,7 @@
         <div class="card-body">
           <h4 class="card-title">{{$tanar->nev}}</h4>
           <p class="card-text">
-            Oktatott tantargy(ak):
+            Tantargy(ak):
             @foreach ($tanar->tanarok_tantargyai as $targy)
                {{$targy->nev}},
             @endforeach          

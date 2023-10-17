@@ -14,7 +14,7 @@
                         Válassz
                     </option>
                     @foreach ($telepulesek as $telepules)
-                    <option value="{{$telepules->telepules}}">
+                    <option value="{{$telepules->telepules}}" {{request('telepules') == $telepules->telepules ? "selected" : ""}}>
                         {{$telepules->telepules}}
                     </option>
                 @endforeach
@@ -25,12 +25,13 @@
                     Válassz
                 </option>
                 @foreach ($tantargyak as $tantargy)
-                <option value="{{$tantargy->tantargy_id}}">
+                <option value="{{$tantargy->tantargy_id}}" {{request('tantargy_id') == $tantargy->tantargy_id ? "selected" : ""}}>
                     {{$tantargy->nev}}
                 </option>
             @endforeach
         </select>
                 <button type="submit" class="btn btn-success form-control mt-3 ">Keresés</button>
+                <a href="{{route("kereso")}}" class="btn btn-danger w-100 mt-3">Keresés törlése</a>
             </form>
             </div>
         </div>
@@ -53,7 +54,9 @@
       </div>
     </div>
       @endforeach
+      <div class="text-center">
       {{$tanarok->links()}}
+    </div>
                 </div>
               </div>
             </div>
@@ -61,5 +64,9 @@
     </div>
 </div>
 
-
+<style>
+    .pagination{
+        text-align: center !important;
+    }
+</style>
 @endsection

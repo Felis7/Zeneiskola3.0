@@ -64,7 +64,7 @@ class tanarController extends Controller
         if ($req->get('tantargy_id') != ""){
             $tantargy_id = $req->get('tantargy_id');
             $tanarok->whereHas('tanarok_tantargyai',function($query) use ($tantargy_id){
-                $query->where('tantargy_id',$tantargy_id);
+                $query->where('tantargyak.tantargy_id',$tantargy_id);
             });
         }
         

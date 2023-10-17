@@ -47,6 +47,14 @@ class tanarok_tantargyaiSeeder extends Seeder
         [
             'tanar_id' => 8,
             'tantargy_id' => 7
+        ],
+        [
+            'tanar_id' => 5,
+            'tantargy_id' => 3
+        ],
+        [
+            'tanar_id' => 3,
+            'tantargy_id' => 1
         ]
         ];
 
