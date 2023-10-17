@@ -17,7 +17,7 @@ class tanarController extends Controller
 
          public function tanarListazas(){
             
-            $tanarok = Tanar::where("telepules","LIKE","Cegléd")->paginate(4);
+            $tanarok = Tanar::query()->get();
             return view('welcome',['tanarok' => $tanarok]);
         }
     
