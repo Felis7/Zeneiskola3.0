@@ -58,8 +58,12 @@ class tanarController extends Controller
          
          if ($req->get('telepules') != ""){
              $telepules = $req->get('telepules');
-             $tanarok->where('telepules', 'like', '%' . $telepules . '%');
+             $tanarok->where('telepules', 'like',  $telepules );
          }
+         if ($req->get('nev') != ""){
+            $nev = $req->get('nev');
+            $tanarok->where('nev', 'like', '%' . $nev . '%');
+        }
         
         if ($req->get('tantargy_id') != ""){
             $tantargy_id = $req->get('tantargy_id');
