@@ -35,12 +35,13 @@
             </div>
         </div>
         <div class="col-9">
+            <div class="row">
             @foreach ($tanarok as $tanar)
       <div class="col-2">
       <div class="card">
         <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
-        <div class="card-body p-1">
-          <h4 class="card-title m-0">{{$tanar->nev}}</h4>
+        <div class="card-body">
+          <h4 class="card-title">{{$tanar->nev}}</h4>
           <p class="card-text">
             Oktatott tantargy(ak):
             @foreach ($tanar->tanarok_tantargyai as $targy)
@@ -55,6 +56,7 @@
       {{$tanarok->links()}}
                 </div>
               </div>
+            </div>
         </div>
     </div>
 </div>

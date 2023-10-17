@@ -68,7 +68,7 @@ class tanarController extends Controller
             });
         }
         
-        $tanarok = $tanarok->paginate(2);
+        $tanarok = $tanarok->paginate(6);
 
         return view("tanarKereso",["tanarok" => $tanarok, "telepulesek"=> $telepulesek, "tantargyak"=> $tantargyak]);
     }
