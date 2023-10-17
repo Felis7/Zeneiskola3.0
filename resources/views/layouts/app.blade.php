@@ -26,9 +26,9 @@
         
     </div>
    </div>
-<nav class="navbar-expand-sm bg-light navbar-light container-fluid" id="navbar">   
+<nav class="navbar-expand-lg col-12 bg-light navbar-light container-fluid" id="navbar">   
     <div class="row">
-        <div class="col-6">
+        <div class="col-12 col-xl-6">
       <ul class="navbar-nav">
         <li class="nav-item">
           <a class="nav-link active p-2 fs-5" href="{{route("home")}}">Kezdőlap</a>
@@ -41,8 +41,8 @@
         </li>
     </ul>
     </div>
-    <div class="col-6 d-flex justify-content-end">
-    <ul class="navbar-nav">
+    <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
+    <ul class="navbar-nav" id="jobnav">
             <li class="nav-item">
                 <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
               </li>

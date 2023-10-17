@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid">
     <div class="row">
-        <div class="col-12 col-lg-3">
+        <div class="col-12 col-xl-3">
             <div class="p-3 bg-light border rounded">
                 <form method="GET">
                 <h1 class="text-center text-success">Tanárkereső</h1>
@@ -37,10 +37,10 @@
             </form>
             </div>
         </div>
-        <div class="col-12 col-lg-9">
+        <div class="col-12 col-xl-9">
             <div class="row">
             @foreach ($tanarok as $tanar)
-      <div class="col-6 col-lg-2">
+      <div class="col-6 col-xl-2">
       <div class="card">
         <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
         <div class="card-body">

@@ -36,3 +36,9 @@ footer {
     text-align: center;
     color: #47c029;
 }
+
+@media (max-width: 992px) {
+    #jobnav{
+        width: 100%;
+    }
+}
