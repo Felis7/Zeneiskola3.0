@@ -43,10 +43,8 @@
                     <td> {{$profil->oradij}}</td>
                 </tr>
                 </table>
-            
         </div>
-    
-</div>
+    </div>
 </div>
 
 

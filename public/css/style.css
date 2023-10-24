@@ -35,6 +35,8 @@ footer {
     background-color: #1e373e;
     text-align: center;
     color: #47c029;
+    height:80px;
+    padding-top: 20px;
 }
 
 @media (max-width: 992px) {
@@ -50,5 +52,9 @@ footer {
     margin-left: 13px;
     margin-right: 13px;
     width: auto;
+}
+
+#body{
+padding-bottom:100px;
 }
 
