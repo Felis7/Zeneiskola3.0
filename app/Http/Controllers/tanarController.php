@@ -39,7 +39,11 @@ class tanarController extends Controller
     }
             
         
-    
+    public function tanarProfil($tanar_id){
+        $profil = Tanar::find($tanar_id);
+        
+        return view("tanarprofil",["profil" => $profil]);
+    }
 
 
     

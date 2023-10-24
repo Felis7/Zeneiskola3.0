@@ -42,3 +42,9 @@ footer {
         width: 100%;
     }
 }
+
+#profilTitle{
+    border-style: solid;
+    border-color: black;
+}
+
