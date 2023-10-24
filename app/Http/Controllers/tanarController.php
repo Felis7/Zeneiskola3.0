@@ -17,7 +17,7 @@ class tanarController extends Controller
 
          public function tanarListazas(){
             
-            $tanarok = Tanar::query()->get();
+            $tanarok = Tanar::inRandomOrder()->limit(6)->get();
             return view('welcome',['tanarok' => $tanarok]);
         }
     

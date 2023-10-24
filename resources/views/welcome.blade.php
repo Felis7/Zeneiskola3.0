@@ -5,7 +5,6 @@
   <div class="row">
     <?php $count = 0; ?>
     @foreach ($tanarok as $tanar)
-      <?php if($count == 6) break; ?>
       <div class="col-6 col-xl-2">
       <div class="card">
         <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
@@ -18,7 +17,7 @@
             @endforeach          
           </p>
           <a href="./tanarprofil/{{$tanar->tanar_id}}" class="btn btn-success">Írány a profil</a>
-          <?php $count++; ?>
+          
         </div>
       </div>
     </div>
