@@ -31,7 +31,7 @@
         <div class="col-12 col-xl-6">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active p-2 fs-5" href="{{route("home")}}">Kezdőlap</a>
+          <a class="nav-link active p-2 fs-5" href="{{route("kezdolap")}}">Kezdőlap</a>
         </li>
        <li class="nav-item">
           <a class="nav-link active p-2 fs-5" href="{{route("kereso")}}">Tanárkereső</a>
@@ -44,10 +44,15 @@
     <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
     <ul class="navbar-nav" id="jobnav">
             <li class="nav-item">
-                <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
+                <a class="nav-link active p-2 fs-5" href="{{route("login")}}">Belépés</a>
               </li>
              <li class="nav-item">
-                <a class="nav-link active p-2 fs-5" href="#">Regisztráció</a>
+               @guest
+               <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Regisztráció</a>
+               @endguest
+               @auth
+               <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Kilépés</a>
+               @endauth
               </li>
             </ul>
         </div>
