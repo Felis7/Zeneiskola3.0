@@ -11,7 +11,7 @@
       <div class="bg-light p-3 rounded">
         <form method="POST">
             <label for="kepInput" class="form-label">Profilkép:</label>
-            <input type="image" class="form-control" id="kepInput" name="kepInput" value="{{'old(kepInput')}}">
+            <input type="image" class="form-control" id="kepInput" name="kepInput" value="{{old('kepInput')}}">
             @error('')
                 
             <button type="submit" class="btn btn-primary mt-5">Csere</button>

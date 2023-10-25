@@ -37,7 +37,7 @@
           <a class="nav-link active p-2 fs-5" href="{{route("kereso")}}">Tanárkereső</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link active p-2 fs-5" href="{{route("regisztracio")}}">Hangszerpiac</a>
+          <a class="nav-link active p-2 fs-5" href="#">Hangszerpiac</a>
         </li>
     </ul>
     </div>
@@ -47,7 +47,7 @@
                 <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
               </li>
              <li class="nav-item">
-                <a class="nav-link active p-2 fs-5" href="#">Regisztráció</a>
+                <a class="nav-link active p-2 fs-5" href="{{route("regisztracio")}}">Regisztráció</a>
               </li>
             </ul>
         </div>
