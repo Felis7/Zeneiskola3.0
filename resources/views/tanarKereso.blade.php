@@ -51,7 +51,7 @@
                {{$targy->nev}},
             @endforeach          
           </p>
-          <a href="#" class="btn btn-success">Írány a profil</a>
+          <a href="./tanarprofil/{{$tanar->tanar_id}}" class="btn btn-success">Írány a profil</a>
         </div>
       </div>
     </div>

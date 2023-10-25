@@ -17,7 +17,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body class="bg-success">
+<body class="bg-success" id="body">
     <div class="container-fluid">
     <div class="row">
         <div class="col-12 bg-success text-primary pt-3">
@@ -31,7 +31,7 @@
         <div class="col-12 col-xl-6">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active p-2 fs-5" href="{{route("home")}}">Kezdőlap</a>
+          <a class="nav-link active p-2 fs-5" href="{{route("kezdolap")}}">Kezdőlap</a>
         </li>
        <li class="nav-item">
           <a class="nav-link active p-2 fs-5" href="{{route("kereso")}}">Tanárkereső</a>
@@ -44,10 +44,19 @@
     <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
     <ul class="navbar-nav" id="jobnav">
             <li class="nav-item">
-                <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
+                <a class="nav-link active p-2 fs-5" href="{{route("login")}}">Belépés</a>
               </li>
              <li class="nav-item">
+<<<<<<< HEAD
                 <a class="nav-link active p-2 fs-5" href="{{route("regisztracio")}}">Regisztráció</a>
+=======
+               @guest
+               <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Regisztráció</a>
+               @endguest
+               @auth
+               <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Kilépés</a>
+               @endauth
+>>>>>>> 80f111659406a6ff3ea03ade49dadca8fb8c520c
               </li>
             </ul>
         </div>

@@ -17,7 +17,7 @@ class tanarController extends Controller
 
          public function tanarListazas(){
             
-            $tanarok = Tanar::query()->get();
+            $tanarok = Tanar::inRandomOrder()->limit(6)->get();
             return view('welcome',['tanarok' => $tanarok]);
         }
     
@@ -39,7 +39,11 @@ class tanarController extends Controller
     }
             
         
-    
+    public function tanarProfil($tanar_id){
+        $profil = Tanar::find($tanar_id);
+        
+        return view("tanarprofil",["profil" => $profil]);
+    }
 
 
     
