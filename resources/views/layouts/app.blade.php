@@ -47,16 +47,12 @@
                 <a class="nav-link active p-2 fs-5" href="{{route("login")}}">Belépés</a>
               </li>
              <li class="nav-item">
-<<<<<<< HEAD
-                <a class="nav-link active p-2 fs-5" href="{{route("regisztracio")}}">Regisztráció</a>
-=======
                @guest
                <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Regisztráció</a>
                @endguest
                @auth
                <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Kilépés</a>
                @endauth
->>>>>>> 80f111659406a6ff3ea03ade49dadca8fb8c520c
               </li>
             </ul>
         </div>
