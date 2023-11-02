@@ -44,7 +44,7 @@
     <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
     <ul class="navbar-nav" id="jobnav">
             <li class="nav-item">
-                <a class="nav-link active p-2 fs-5" href="#">Belépés</a>
+                <a class="nav-link active p-2 fs-5" href="{{route("login")}}">Belépés</a>
               </li>
              <li class="nav-item">
                @guest
