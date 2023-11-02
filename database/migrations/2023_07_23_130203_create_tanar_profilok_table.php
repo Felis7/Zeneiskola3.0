@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string("email");
             $table->integer("oradij");
             $table->timestamp("elofizetes_lejarata");
-            $table->foreignId("bt_id")->references("bt_id")->on("barion_tranzakcio")->onDelete('cascade');
+            $table->integer("payment_id");
         });
     }
 
