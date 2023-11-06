@@ -22,7 +22,6 @@ return new class extends Migration
             $table->string("email");
             $table->integer("oradij");
             $table->timestamp("elofizetes_lejarata");
-            $table->integer("payment_id");
         });
     }
 
