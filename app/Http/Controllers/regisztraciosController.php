@@ -8,6 +8,7 @@ use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Mail;
 use App\Mail\SendEmail;
 use App\Models\regisztracioModel;
+use App\Models\Tanar;
 
 class regisztraciosController extends Controller
 {
@@ -29,10 +30,13 @@ class regisztraciosController extends Controller
         ]);
         $token =Str::random(60);
         $kuldes = new regisztracioModel;
+        $tanarok = new Tanar;
+        $tanarok-> save();
 
         $kuldes->name= $req->input("name");
         $kuldes->email= $req->input("email");
         $kuldes->password= Hash::make($req->input("password"));
+        $kuldes->tid= $tanarok->tanar_id;
         $kuldes->timestamps= now();
         $kuldes->remember_token= $token;
         $kuldes->save();

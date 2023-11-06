@@ -13,15 +13,15 @@ return new class extends Migration
     {
         Schema::create('tanar_profilok', function (Blueprint $table) {
             $table->id("tanar_id");
-            $table->string("nev", 50);
-            $table->text("leiras");
-            $table->integer("irsz");
-            $table->string("telepules", 20);
-            $table->string("cim", 40);
-            $table->integer("telefonszam");
-            $table->integer("oradij");
-            $table->timestamp("elofizetes_lejarata");
-            $table->foreignId("uid")->references("id")->on("users");
+            $table->string("nev", 50)->nullable();
+            $table->text("leiras")->nullable();
+            $table->integer("irsz")->nullable();
+            $table->string("telepules", 20)->nullable();
+            $table->string("cim", 40)->nullable();
+            $table->integer("telefonszam")->nullable();
+            $table->integer("oradij")->nullable();
+            $table->timestamp("elofizetes_lejarata")->nullable();
+            
         });
     }
 
