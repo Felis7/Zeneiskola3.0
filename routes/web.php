@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\tanarController;
 use App\Http\Controllers\regisztraciosController;
 
-//Auth::routes();
+Auth::routes();
 
 Route::get('/', [tanarController::class, 'tanarListazas'])->name('kezdolap');
 Route::get('/kereso', [tanarController::class, 'tanarKereso'])->name('kereso');
@@ -17,3 +17,7 @@ Route::get('/login',function(){return view('auth/login');})->name('login');
 
 Route::get('/profil',function(){return view('profil');})->name('profil');
 Route::get('/home', function(){return view('home');})->name('home');
+
+Route::get('/admin/felhasznokezeles',[adminController::class,'userLista'])
+->name('adminUserLista')
+->middleware("adminMiddleware");

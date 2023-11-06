@@ -23,9 +23,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Cegléd',
             'cim' => 'Petőfi Sándor utca 1',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-07-01'
+            'elofizetes_lejarata' => '2024-07-01',
+            'uid' => 1
         ],
         [
             'nev' => 'Kovács Béla',
@@ -34,9 +34,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-01'
+            'elofizetes_lejarata' => '2024-05-01',
+            'uid' => 2
         ],
         [
             'nev' => 'Minta Panna',
@@ -45,9 +45,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Taksony',
             'cim' => 'Petőfi Sándor utca 3',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-11'
+            'elofizetes_lejarata' => '2024-05-11',
+            'uid' => 3
         ],
         [
             'nev' => 'Kovács Antal',
@@ -56,9 +56,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Dunakeszi',
             'cim' => 'Petőfi Sándor utca 5',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-21'
+            'elofizetes_lejarata' => '2024-05-21',
+            'uid' => 4
         ],[
             'nev' => 'Kovács János',
             'leiras' => '10 éve foglalkozok kalimbázással',
@@ -66,9 +66,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Budaörs',
             'cim' => 'Petőfi Sándor utca 55',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-20'
+            'elofizetes_lejarata' => '2024-05-20',
+            'uid' => 5
         ],
         [
             'nev' => 'Kovács Béla',
@@ -77,9 +77,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-01'
+            'elofizetes_lejarata' => '2024-05-01',
+            'uid' => 6
         ],
         [
             'nev' => 'Teszt Tamás',
@@ -88,9 +88,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Budapest',
             'cim' => 'Petőfi Sándor utca 62',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-05-25'
+            'elofizetes_lejarata' => '2024-05-25',
+            'uid' => 7
         ],[
             'nev' => 'Teszt Valaki',
             'leiras' => '10 éve foglalkozok fuvolával',
@@ -98,9 +98,9 @@ class tanar_profilokSeeder extends Seeder
             'telepules' => 'Érd',
             'cim' => 'Petőfi Sándor utca 255',
             'telefonszam' => 112345678,
-            'email' => 'teszt@teszt.com',
             'oradij' => 5000,
-            'elofizetes_lejarata' => '2024-07-21'
+            'elofizetes_lejarata' => '2024-07-21',
+            'uid' => 8
         ]
 
             ];

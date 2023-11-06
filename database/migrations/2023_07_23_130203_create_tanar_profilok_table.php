@@ -19,9 +19,9 @@ return new class extends Migration
             $table->string("telepules", 20);
             $table->string("cim", 40);
             $table->integer("telefonszam");
-            $table->string("email");
             $table->integer("oradij");
             $table->timestamp("elofizetes_lejarata");
+            $table->foreignId("uid")->references("id")->on("users");
         });
     }
 
