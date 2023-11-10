@@ -3,6 +3,8 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\tanarController;
 use App\Http\Controllers\regisztraciosController;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\profilController;
 
 Auth::routes();
 
@@ -14,8 +16,10 @@ Route::get('/register',function(){return view('auth/register');})->name('registe
 Route::post("/register", [regisztraciosController::class,"reg"]);
 Route::get("/register/confirm/{token}",[regisztraciosController::class,"confirm"]);
 Route::get('/login',function(){return view('auth/login');})->name('login');
+Route::get('/kijelentkezes',function(){Auth::logout();return redirect("login");})->name("logout");
 
-Route::get('/profil',function(){return view('profil');})->name('profil');
+Route::get('/profil',[profilController::class,"profilBetoltes"])->name('profil');
+Route::post("/profil/profilMentes", [profilController::class,"adatMentes"])->name("profilMentes");
 Route::get('/home', function(){return view('home');})->name('home');
 
 Route::get('/admin/felhasznokezeles',[adminController::class,'userLista'])

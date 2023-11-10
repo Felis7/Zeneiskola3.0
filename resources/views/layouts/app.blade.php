@@ -44,14 +44,19 @@
     <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
     <ul class="navbar-nav" id="jobnav">
             <li class="nav-item">
+                @guest
                 <a class="nav-link active p-2 fs-5" href="{{route("login")}}">Belépés</a>
+                @endguest
+                @auth
+                <a class="nav-link active p-2 fs-5" href="{{route("profil")}}">Profil</a>
+                @endauth
               </li>
              <li class="nav-item">
                @guest
                <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Regisztráció</a>
                @endguest
                @auth
-               <a class="nav-link active p-2 fs-5" href="{{route("register")}}">Kilépés</a>
+               <a class="nav-link active p-2 fs-5" href="{{route("logout")}}">Kilépés</a>
                @endauth
               </li>
             </ul>

@@ -32,7 +32,7 @@
           <div class="bg-light p-3 rounded">
             <form method="POST">
               <label for="emailInput" class="form-label mt-3">E-mail:</label>        
-              <input type="email" name="emailInput" id="emailInput" class="form-control" placeholder="mintamaria@gmail.com">
+              <input type="email" name="emailInput" id="emailInput" class="form-control" placeholder="mintamaria@gmail.com" value="{{$user}}">
               
               @error('emailInput')
               <div class="alert alert-danger">
@@ -57,9 +57,10 @@
     </div>
     <div class="col-12 col-md-6 mb-3">
       <div class="bg-light p-3 rounded">
-        <form method="POST">
+        <form method="POST" action="./profil/profilMentes">
+          @csrf
           <label for="nevInput" class="form-label">Név:</label>
-          <input type="text" class="form-control" id="nevInput" name="nevInput" placeholder="pl.:Minta Mária">
+          <input type="text" class="form-control" id="nevInput" name="nevInput" placeholder="pl.:Minta Mária" value="{{$tanar->nev}}">
 
           @error('nevInput')
             <div class="alert alert-danger">
@@ -68,7 +69,7 @@
           @enderror
 
           <label for="leirasInput" class="form-label mt-3">Magadról:</label>        
-          <textarea name="leirasInput" id="leirasInput" cols="30" rows="3" class="form-control"></textarea>
+          <textarea name="leirasInput" id="leirasInput" cols="30" rows="3" class="form-control">{{$tanar->leiras}}</textarea>
 
           @error('leirasInput')
           <div class="alert alert-danger">
@@ -77,7 +78,7 @@
           @enderror        
 
           <label for="irszamInput" class="form-label mt-3">Irányítószám:</label>        
-          <input type="number" name="irszamInput" id="irszamInput" class="form-control" placeholder="pl.:1234">
+          <input type="number" name="irszamInput" id="irszamInput" class="form-control" placeholder="pl.:1234" value="{{$tanar->irsz}}">
           
           @error('irszamInput')
           <div class="alert alert-danger">
@@ -86,7 +87,7 @@
           @enderror
 
           <label for="telepulesInput" class="form-label mt-3">Település:</label>        
-          <input type="text" name="telepulesInput" id="telepulesInput" class="form-control" placeholder="pl.:Budapest">
+          <input type="text" name="telepulesInput" id="telepulesInput" class="form-control" placeholder="pl.:Budapest" value="{{$tanar->telepules}}">
           
           @error('telepulesInput')
           <div class="alert alert-danger">
@@ -95,7 +96,7 @@
           @enderror
 
           <label for="cimInput" class="form-label mt-3">Cím:</label>        
-          <input type="text" name="cimInput" id="cimInput" class="form-control" placeholder="pl.:Sima utca 1.">
+          <input type="text" name="cimInput" id="cimInput" class="form-control" placeholder="pl.:Sima utca 1." value="{{$tanar->irsz}}">
           
           @error('cimInput')
           <div class="alert alert-danger">
@@ -106,7 +107,7 @@
           <label for="telszamInput" class="form-label mt-3">Telefonszám:</label> 
           <div class="input-group">
             <span class="input-group-text">+36</span>       
-            <input type="number" name="telszamInput" id="telszamInput" class="form-control" placeholder="pl.: 301234567">
+            <input type="number" name="telszamInput" id="telszamInput" class="form-control" placeholder="pl.: 301234567" value="{{$tanar->telefonszam}}>
           </div>
         
 
@@ -119,7 +120,7 @@
 
           <label for="oradijInput" class="form-label mt-3">Óradíj:</label> 
           <div class="input-group">       
-            <input type="number" name="oradijInput" id="oradijInput" class="form-control" placeholder="pl: 1000">
+            <input type="number" name="oradijInput" id="oradijInput" class="form-control" placeholder="pl: 1000" value="{{$tanar->oradij}}">
             <span class="input-group-text">Ft</span>
           </div>
 
