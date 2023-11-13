@@ -33,5 +33,8 @@ class DatabaseSeeder extends Seeder
          $this->call([
             tanarok_tantargyaiSeeder::class,
          ]);
+         $this->call([
+            userSeeder::class,
+         ]);
     }
 }

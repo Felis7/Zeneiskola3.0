@@ -21,7 +21,6 @@ return new class extends Migration
             $table->integer("telefonszam")->nullable();
             $table->integer("oradij")->nullable();
             $table->timestamp("elofizetes_lejarata")->nullable();
-            
         });
     }
 
