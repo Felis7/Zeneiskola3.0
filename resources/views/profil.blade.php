@@ -107,11 +107,11 @@
           <label for="telszamInput" class="form-label mt-3">Telefonszám:</label> 
           <div class="input-group">
             <span class="input-group-text">+36</span>       
-            <input type="number" name="telszamInput" id="telszamInput" class="form-control" placeholder="pl.: 301234567" value="{{$tanar->telefonszam}}>
+            <input type="number" name="telszamInput" id="telszamInput" class="form-control" placeholder="pl.: 301234567" value="{{$tanar->telefonszam}}">
           </div>
         
 
-          @error('telefonszamInput')
+          @error('telszamInput')
           <div class="alert alert-danger">
             {{$message}}
           </div>            
