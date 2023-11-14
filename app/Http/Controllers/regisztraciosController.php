@@ -31,7 +31,7 @@ class regisztraciosController extends Controller
         $token =Str::random(60);
         $kuldes = new regisztracioModel;
         $tanarok = new Tanar;
-        $tanarok-> save();
+        $tanarok->save();
 
         $kuldes->name= $req->input("name");
         $kuldes->email= $req->input("email");
