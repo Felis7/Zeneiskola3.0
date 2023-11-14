@@ -5,6 +5,7 @@ namespace App\Http\Middleware;
 use Closure;
 use Illuminate\Http\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Illuminate\Support\Facades\Auth;
 
 class admin
 {
@@ -17,7 +18,7 @@ class admin
     {
         $user = Auth::user();
         if($user==NULL || $user->admin_vertificated == 0){
-            return redirect()->route('home');
+            return redirect()->route('kezdolap');
         }
         return $next($request);
     }
