@@ -55,7 +55,7 @@
     button.addEventListener('click', function() {
         var userId = this.getAttribute('data-userid');
 
-        fetch('/delete-user', {
+        fetch('./delete-user', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

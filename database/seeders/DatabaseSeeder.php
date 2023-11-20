@@ -24,6 +24,9 @@ class DatabaseSeeder extends Seeder
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
+        $this->call([
+            userSeeder::class,
+         ]);
          $this->call([
              tanar_profilokSeeder::class,
          ]);
@@ -33,8 +36,6 @@ class DatabaseSeeder extends Seeder
          $this->call([
             tanarok_tantargyaiSeeder::class,
          ]);
-         $this->call([
-            userSeeder::class,
-         ]);
+         
     }
 }

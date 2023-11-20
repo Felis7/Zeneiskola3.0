@@ -23,6 +23,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 1',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 1,
             'elofizetes_lejarata' => '2024-07-01'
         ],
         [
@@ -32,6 +33,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 2,
             'elofizetes_lejarata' => '2024-05-01'
         ], 
         [
@@ -41,6 +43,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 3',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 3,
             'elofizetes_lejarata' => '2024-05-11'
         ],
         [
@@ -50,6 +53,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 5',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 4,
             'elofizetes_lejarata' => '2024-05-21'
         ],[
             'leiras' => '10 éve foglalkozok kalimbázással',
@@ -58,6 +62,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 55',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 5,
             'elofizetes_lejarata' => '2024-05-20'
         ],[
             'leiras' => '10 éve foglalkozok zongorázással',
@@ -66,6 +71,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 2',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 6,
             'elofizetes_lejarata' => '2024-05-01'
         ],[
             'leiras' => '10 éve foglalkozok dobolással',
@@ -74,6 +80,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 62',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 7,
             'elofizetes_lejarata' => '2024-05-25'
         ],[
             'leiras' => '10 éve foglalkozok fuvolával',
@@ -82,6 +89,7 @@ class tanar_profilokSeeder extends Seeder
             'cim' => 'Petőfi Sándor utca 255',
             'telefonszam' => 112345678,
             'oradij' => 5000,
+            'uid' => 8,
             'elofizetes_lejarata' => '2024-07-21'
         ]
             ];

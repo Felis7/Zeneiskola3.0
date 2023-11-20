@@ -12,14 +12,15 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('tanar_profilok', function (Blueprint $table) {
-            $table->id("tanar_id");
-            $table->string("nev", 50)->nullable();
+            $table->id("tid");
             $table->text("leiras")->nullable();
             $table->integer("irsz")->nullable();
             $table->string("telepules", 20)->nullable();
             $table->string("cim", 40)->nullable();
             $table->integer("telefonszam")->nullable();
             $table->integer("oradij")->nullable();
+            $table->unsignedBigInteger("uid")->nullable();
+            $table->foreign("uid")->references("uid")->on("users")->onDelete("cascade");
             $table->timestamp("elofizetes_lejarata")->nullable();
         });
     }

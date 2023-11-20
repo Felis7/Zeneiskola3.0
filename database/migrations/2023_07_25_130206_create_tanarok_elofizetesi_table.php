@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id("te_id");
             $table->timestamp("ido");
             $table->integer("osszeg");
-            $table->foreignId("tanar_id")->references("tanar_id")->on("tanar_profilok")->onDelete('cascade');
+            $table->foreignId("tid")->references("tid")->on("tanar_profilok")->onDelete('cascade');
         });
     }
 

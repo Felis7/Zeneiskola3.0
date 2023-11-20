@@ -17,43 +17,43 @@ class tanarok_tantargyaiSeeder extends Seeder
     {
         $tan_tantargyak=[
         [
-            'tanar_id' => 1,
+            'tid' => 1,
             'tantargy_id' => 2
         ],
         [
-            'tanar_id' => 2,
+            'tid' => 2,
             'tantargy_id' => 1
         ],
         [
-            'tanar_id' => 3,
+            'tid' => 3,
             'tantargy_id' => 3
         ],
         [
-            'tanar_id' => 4,
+            'tid' => 4,
             'tantargy_id' => 6
         ],
         [
-            'tanar_id' => 5,
+            'tid' => 5,
             'tantargy_id' => 5
         ],
         [
-            'tanar_id' => 6,
+            'tid' => 6,
             'tantargy_id' => 1
         ],
         [
-            'tanar_id' => 7,
+            'tid' => 7,
             'tantargy_id' => 4
         ],
         [
-            'tanar_id' => 8,
+            'tid' => 8,
             'tantargy_id' => 7
         ],
         [
-            'tanar_id' => 5,
+            'tid' => 5,
             'tantargy_id' => 3
         ],
         [
-            'tanar_id' => 3,
+            'tid' => 3,
             'tantargy_id' => 1
         ]
         ];
