@@ -213,6 +213,10 @@ class Validator implements ValidatorContract
         'MissingWith',
         'MissingWithAll',
         'Present',
+        'PresentIf',
+        'PresentUnless',
+        'PresentWith',
+        'PresentWithAll',
         'Required',
         'RequiredIf',
         'RequiredIfAccepted',
@@ -294,6 +298,13 @@ class Validator implements ValidatorContract
      * @var string
      */
     protected $exception = ValidationException::class;
+
+    /**
+     * The custom callback to determine if an exponent is within allowed range.
+     *
+     * @var callable|null
+     */
+    protected $ensureExponentWithinAllowedRangeUsing;
 
     /**
      * Create a new Validator instance.
@@ -430,14 +441,18 @@ class Validator implements ValidatorContract
                 $this->validateAttribute($attribute, $rule);
 
                 if ($this->shouldBeExcluded($attribute)) {
-                    $this->removeAttribute($attribute);
-
                     break;
                 }
 
                 if ($this->shouldStopValidating($attribute)) {
                     break;
                 }
+            }
+        }
+
+        foreach ($this->rules as $attribute => $rules) {
+            if ($this->shouldBeExcluded($attribute)) {
+                $this->removeAttribute($attribute);
             }
         }
 
@@ -1471,6 +1486,16 @@ class Validator implements ValidatorContract
     }
 
     /**
+     * Get the exception to throw upon failed validation.
+     *
+     * @return string
+     */
+    public function getException()
+    {
+        return $this->exception;
+    }
+
+    /**
      * Set the exception to throw upon failed validation.
      *
      * @param  string  $exception
@@ -1487,6 +1512,19 @@ class Validator implements ValidatorContract
         }
 
         $this->exception = $exception;
+
+        return $this;
+    }
+
+    /**
+     * Ensure exponents are within range using the given callback.
+     *
+     * @param  callable(int $scale, string $attribute, mixed $value)  $callback
+     * @return $this
+     */
+    public function ensureExponentWithinAllowedRangeUsing($callback)
+    {
+        $this->ensureExponentWithinAllowedRangeUsing = $callback;
 
         return $this;
     }

@@ -9,7 +9,8 @@ class regisztracioModel extends Model
 {
     use HasFactory;
 
-    protected $table= "tanar_profilok";
-    protected $fillable = ["nev", "leiras", "irsz", "telepules", "cim", "telefonszam", "email", "oradij"];
-    protected $primarykey = "tanar_id";
+    protected $table= "users";
+    protected $fillable = ["nev", "email", "email_verified_at",	"password	remember_token"];
+    protected $primarykey = "id";
+    public $timestamps = true; 
 }
