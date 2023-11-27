@@ -64,8 +64,10 @@ class tanarController extends Controller
          }
          if ($req->get('nev') != ""){
             $nev = $req->get('nev');
-            $tanarok->user_details()->where('nev', 'like', '%' . $nev . '%');
+            $tanarok->whereHas('user_details', function ($query) use ($nev)  {$query->where('users.name', 'like', '%' . $nev . '%');
+            });
         }
+    
         
         if ($req->get('tantargy_id') != ""){
             $tantargy_id = $req->get('tantargy_id');

@@ -9,7 +9,7 @@
       <div class="card">
         <img class="card-img-top" src="{{asset('img/'.$tanar->tid . '.jpg')}}" alt="Profil kép">
         <div class="card-body">
-          <h4 class="card-title">{{$tanar->nev}}</h4>
+          <h4 class="card-title">{{$tanar->user_details['name']}}</h4>
           <p class="card-text">
             Tantargy(ak):
             @foreach ($tanar->tanarok_tantargyai as $targy)

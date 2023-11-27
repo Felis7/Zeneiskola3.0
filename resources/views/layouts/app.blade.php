@@ -45,6 +45,7 @@
     <div class="col-12 col-xl-6 d-flex justify-content-xl-end">
     <ul class="navbar-nav" id="jobnav">
       @auth
+    
       @if (Auth::user()->admin_vertificated == '1')
       <li class="nav-item">
         <a class="nav-link active p-2 fs-5" href="{{route("adminUserLista")}}">Userlista</a>
