@@ -28,4 +28,5 @@ Route::get('/admin/felhasznalokezeles',[adminController::class,'userLista'])
 ->name('adminUserLista')
 ->middleware("admin");
 
-Route::post('/admin/delete-user', [userController::class, 'deleteUser']);
+Route::post('/admin/delete-user', [userController::class, 'deleteUser'])->name('adminUserLista')
+->middleware("admin");

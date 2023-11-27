@@ -7,7 +7,7 @@
     @foreach ($tanarok as $tanar)
       <div class="col-6 col-xl-2">
       <div class="card">
-        <img class="card-img-top" src="{{asset('img/'.$tanar->tanar_id . '.jpg')}}" alt="Profil kép">
+        <img class="card-img-top" src="{{asset('img/'.$tanar->tid . '.jpg')}}" alt="Profil kép">
         <div class="card-body">
           <h4 class="card-title">{{$tanar->nev}}</h4>
           <p class="card-text">
@@ -16,7 +16,7 @@
                {{$targy->nev}},
             @endforeach          
           </p>
-          <a href="./tanarprofil/{{$tanar->tanar_id}}" class="btn btn-success">Írány a profil</a>
+          <a href="./tanarprofil/{{$tanar->tid}}" class="btn btn-success">Írány a profil</a>
           
         </div>
       </div>

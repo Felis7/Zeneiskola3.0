@@ -3,7 +3,7 @@
 @section('content')
 <div class="container-fluid bg-light" id="profilTitle">
     <div class="row">
-        <div class="col-12 col-md-3 "><img src="{{asset('img/'.$profil->tanar_id . '.jpg')}}" alt="Profilkep" class="img-fluid">
+        <div class="col-12 col-md-3 "><img src="{{asset('img/'.$profil->tid . '.jpg')}}" alt="Profilkep" class="img-fluid">
         </div>
         <div class="col-12 col-md-9">
                 <table class="table table-success table-striped mt-3">
@@ -11,7 +11,7 @@
                     <th>
                         Név:
                     </th>
-                    <td>{{$profil->nev}}</td>
+                    <td>{{$profil->user_details['name']}}</td>
                 </tr>
                 <tr>
                     <th> 
@@ -28,7 +28,7 @@
                     <th>
                         E-mail:
                     </th>
-                    <td> {{$profil->email}}</td>
+                    <td> {{$profil->user_details['email']}}</td>
                 </tr>
                 <tr>
                     <th>

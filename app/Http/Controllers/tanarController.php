@@ -51,11 +51,9 @@ class tanarController extends Controller
          $tanarok = Tanar::query();
          $telepulesek = Tanar::select("telepules")->groupBy("telepules")->get();
          $tantargyak = Tantargy::select("tantargy_id", "nev")->get();
-         $nev = "";
          $tantargy = "";
          $cim = "";
          $telefon = "";
-         $email = "";
          $leiras = "";
          $oradij = "";
 
@@ -66,7 +64,7 @@ class tanarController extends Controller
          }
          if ($req->get('nev') != ""){
             $nev = $req->get('nev');
-            $tanarok->where('nev', 'like', '%' . $nev . '%');
+            $tanarok->user_details()->where('nev', 'like', '%' . $nev . '%');
         }
         
         if ($req->get('tantargy_id') != ""){
