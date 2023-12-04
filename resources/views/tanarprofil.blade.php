@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+@section('title',$profil->user_details['name'] . " profilja")
 <div class="container-fluid bg-light" id="profilTitle">
     <div class="row">
         <div class="col-12 col-md-3 "><img src="{{asset('img/'.$profil->tid . '.jpg')}}" alt="Profilkep" class="img-fluid">
