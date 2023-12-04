@@ -18,6 +18,7 @@ class tanarController extends Controller
          public function tanarListazas(){
             
             $tanarok = Tanar::inRandomOrder()->limit(6)->get();
+            $tanarok->where("users.admin_vertificated", "0");
             return view('welcome',['tanarok' => $tanarok]);
         }
     
@@ -57,6 +58,7 @@ class tanarController extends Controller
          $leiras = "";
          $oradij = "";
 
+        
          
          if ($req->get('telepules') != ""){
              $telepules = $req->get('telepules');
