@@ -29,3 +29,5 @@ Route::get('/admin/felhasznalokezeles',[adminController::class,'userLista'])
 ->middleware("admin");
 
 Route::post('/admin/delete-user', [userController::class, 'deleteUser']);
+
+Route::get("/hangszerpiac", function(){return view("hangszerpiac");})->name("hangszerpiac");

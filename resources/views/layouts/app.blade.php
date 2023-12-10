@@ -17,6 +17,13 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Open+Sans&family=Sen:wght@500&display=swap');
+
+      .hangszerpiacBetutipus{
+        font-family: 'Kalnia', serif;
+      }
+    </style>
 </head>
 <body class="bg-success" id="body">
     <div class="container-fluid">
