@@ -34,19 +34,19 @@
     </div>
     <div class="col-9">
       <div class="container">
-        <div class="row">
+        <div class="row">            
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/versenyZongora.jpg")}}" alt="hangszerkep">
               <div class="card-body">
                 <h4 class="card-title text-center">Zongora</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Budapest
                     
                   </p>
                   <p>
-                    Ár
+                    Ár:5 490 000Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -54,17 +54,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/pianino.jpg")}}" alt="hangszerkep">
               <div class="card-body">
                 <h4 class="card-title text-center">Zongora</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Pécs
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 1 649 900Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -72,17 +72,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/akusztikusGitar.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Gitár</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Debrecen
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 30 600Ft 
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -90,17 +90,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/eGitar.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Gitár</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Debrecen
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 72 000Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -108,17 +108,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/nagyDob.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Dob</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Budapest
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 330 900Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -126,17 +126,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/dob.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Dob</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Debrecen
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 5 240Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -144,17 +144,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/vtrombita.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Trombita</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Budapest
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 2 651 000Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -162,17 +162,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/zsebTrombita.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Trombita</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Debrecen
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 107 000Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -180,17 +180,17 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/szopranFurulya.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Furulya</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Pécs
                     
                   </p>
                   <p>
-                    Ár
+                    Ár: 4 500Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
@@ -198,24 +198,23 @@
               </div>
             </div>
             <div class="card col-3" style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/verseny-zongora.jpg")}}" alt="hangszerkep">
+              <img class="card-img-top" height= "200px" width="200px" src="{{asset("img/altFurulya.jpg")}}" alt="hangszerkep">
               <div class="card-body">
-                <h4 class="card-title text-center">Zongora</h4>
+                <h4 class="card-title text-center">Furulya</h4>
     
                 <div class="card-text text-center">
                   <p>
-                    Település
+                    Település: Pécs
                     
                   </p>
                   <p>
-                    Ár
+                    Ár:12 000Ft
                   </p>
                   <a href="#" class= "btn btn-success">Bővebb információ>></a>
                   
                 </div>
               </div>
             </div>
-
 
           </div>
         </div>

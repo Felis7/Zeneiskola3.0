@@ -36,11 +36,11 @@ class regisztraciosController extends Controller
         $kuldes->name= $req->input("name");
         $kuldes->email= $req->input("email");
         $kuldes->password= Hash::make($req->input("password"));
-        $kuldes->tid= $tanarok->tanar_id;
+        $kuldes->uid= $tanarok->tid;
         $kuldes->timestamps= now();
         $kuldes->remember_token= $token;
         $kuldes->save();
-        Mail::to($req->input("email"))->send(new SendEmail("http://localhost/Zeneiskola/public/register/confirm/".$token));
+       // Mail::to($req->input("email"))->send(new SendEmail("http://localhost/Zeneiskola/public/register/confirm/".$token));
 
         return redirect()->route("home")->with("success","A regisztráció sikeresen megtörtént!");
     }

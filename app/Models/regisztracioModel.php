@@ -11,6 +11,6 @@ class regisztracioModel extends Model
 
     protected $table= "users";
     protected $fillable = ["nev", "email", "email_verified_at",	"password	remember_token"];
-    protected $primarykey = "id";
+    protected $primarykey = "uid";
     public $timestamps = true; 
 }
