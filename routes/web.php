@@ -7,6 +7,8 @@ use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\profilController;
 use App\Http\Controllers\adminController;
 use App\Http\Controllers\userController;
+use App\Http\Controllers\piacController;
+use App\Models\telepulesModel;
 
 Auth::routes();
 
@@ -30,4 +32,11 @@ Route::get('/admin/felhasznalokezeles',[adminController::class,'userLista'])
 
 Route::post('/admin/delete-user', [userController::class, 'deleteUser']);
 
-Route::get("/hangszerpiac", function(){return view("hangszerpiac");})->name("hangszerpiac");
+Route::get("/hangszerpiac", [piacController::class, "adatBetolto"])->name("hangszerpiac");
+
+Route::get("/hangszerfeltoltes", function(){
+  $telepules = telepulesModel::all();
+  return view("hangszerfeltoltes", ["adat"=>$telepules]);})->name("hangszerfeltoltes");
+Route::post("/hangszerfeltoltes",[piacController::class, "hangszerfeltolto"]);
+
+Route::get("/informacio/{id}", [piacController::class, "hangszerInfBeker"])->name("informacio");
