@@ -10,4 +10,6 @@ class telepulesModel extends Model
     use HasFactory;
     protected $table = "telepules";
     public $fillable = ["telepules"];
+    public $timestamps = false;
+    protected $primaryKey = "id";
 }

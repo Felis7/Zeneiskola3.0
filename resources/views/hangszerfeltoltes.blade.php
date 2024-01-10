@@ -38,11 +38,9 @@
         <input type="text" name="hangszernevInput" id="hangszernevInput" class= "form-control">
 
         <label for="helyInput" class="form-label mt-3">Település:</label>
-        <select class = "form-select text-success" name="helyInput" id="helyInput">
-          @foreach ($adat as $telepules )
-              <option value="{{$telepules->telepules}}">{{$telepules->telepules}}</option>
-          @endforeach
-        </select>
+        <input class = "form-control text-success" name="helyInput" id="helyInput">
+          
+        
 
         <label for="arInput" class="form-label mt-3">Ára:</label>
         <div class="input-group">       
@@ -65,7 +63,19 @@
         <label for="kepInput" class="form-label mt-3">Kép a hangszerről:</label>
         <input type="file" name="kepInput" id="kepInput" class= "form-control">
 
-        <button class="btn btn-success mt-5">Mentés</button>
+        <div class="container mt-5">
+          <div class="row">
+            <div class="col-6">
+              <button class="btn btn-success">Mentés</button>
+            </div>
+            <div class="col-6">
+              <a href="{{route('hangszerpiac')}}" class="btn btn-danger">Mégsem</a>
+            </div>
+
+          </div>
+        </div>
+        
+
 
       </form>
     </div>

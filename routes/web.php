@@ -36,7 +36,13 @@ Route::get("/hangszerpiac", [piacController::class, "adatBetolto"])->name("hangs
 
 Route::get("/hangszerfeltoltes", function(){
   $telepules = telepulesModel::all();
-  return view("hangszerfeltoltes", ["adat"=>$telepules]);})->name("hangszerfeltoltes");
+  return view("hangszerfeltoltes", ["adat"=>$telepules]);})->name("hangszerfeltoltes")->middleware("auth");
 Route::post("/hangszerfeltoltes",[piacController::class, "hangszerfeltolto"]);
 
 Route::get("/informacio/{id}", [piacController::class, "hangszerInfBeker"])->name("informacio");
+
+Route::get("/debug",function(){
+  return view("debug");
+})->name("debug");
+
+Route::post("/hangszerpiac", [piacController::class, "hangszerKereses"]);

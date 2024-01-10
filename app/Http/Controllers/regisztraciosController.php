@@ -31,7 +31,6 @@ class regisztraciosController extends Controller
         $token =Str::random(60);
         $kuldes = new regisztracioModel;
         $tanarok = new Tanar;
-        $tanarok->save();
 
         $kuldes->name= $req->input("name");
         $kuldes->email= $req->input("email");
@@ -40,9 +39,11 @@ class regisztraciosController extends Controller
         $kuldes->timestamps= now();
         $kuldes->remember_token= $token;
         $kuldes->save();
+        $tanarok->tid = $kuldes->uid;
+        $tanarok->save();
        // Mail::to($req->input("email"))->send(new SendEmail("http://localhost/Zeneiskola/public/register/confirm/".$token));
 
-        return redirect()->route("home")->with("success","A regisztráció sikeresen megtörtént!");
+        return redirect()->route("profil")->with("success","A regisztráció sikeresen megtörtént".$kuldes->uid);
     }
     public function confirm($token){
         $confirm = regisztracioModel::where("remember_token",$token)->first();

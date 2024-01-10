@@ -10,12 +10,11 @@ class profilController extends Controller
 {
     public function profilBetoltes(){
         $user = Auth::user();
-        if($user->tid != null){
-            $tanar = Tanar::find($user->tid);
-            if($tanar){
-                return view("profil",["tanar"=>$tanar,"user"=>$user->email]);
-            }
-            return view("welcome");
+        $tanar = Tanar::find($user->uid);
+        if($user){
+            
+            
+                return view("profil",["user"=>$user->email, "tanar"=>$tanar]);       
         }
             return view("welcome");
     }

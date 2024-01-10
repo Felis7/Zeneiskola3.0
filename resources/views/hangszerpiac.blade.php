@@ -8,12 +8,20 @@
         <div class = "bg-white p-4 rounded">
 
           <form class = "text-success" method="POST">
+            @csrf
+            @auth
+              <div class = "text-center">
+              <a href="{{route('hangszerfeltoltes')}}" class="btn btn-success mb-3 ">Hangszerfeltöltés  <i class="bi bi-upload"></i></a>
+            </div>
+            @endauth
+            
+              
 
             <h1 class="text-center text-success hangszerpiacBetutipus">Keresés</h1>
 
             <label for="rendezes" class="form-label mt-3">Rendezés:</label>
             <select name="rendezes" id="rendezes" class="form-select">
-              <option value="0" disabled selected>--Válassz--</option>
+              <option value="0" selected>--Válassz--</option>
               <option value="1">Név szerint</option>
               <option value="2">Ár szerint növekvő</option>
               <option value="3">Ár szerint csökkenő</option>
@@ -23,9 +31,9 @@
             <input type="text" name="nevInput" id="nevInput" class= "form-control">
             
             <label for="arInput" class= "form-label mt-3">Ár:</label>
-            <input type="range" name="arInput" id="arInput" class="form-range" min="3000" max="6000000" step="100" value="6000000">
+            <input type="range" name="arInput" id="arInput" class="form-range" min="{{$min}}" max="{{$max}}" step="100" value = "{{$max}}">
             <p>
-              Maximum ár: <span id="kiirtAr">6000000</span>Ft
+              Maximum ár: <span id="kiirtAr">{{$max}}</span>Ft
             </p>
   
             <label for="telepulesInput" class = "form-label mt-3">Település:</label>
@@ -34,13 +42,21 @@
                   <option value="{{$telepulesek->telepules}}">{{$telepulesek->telepules}}</option>
               @endforeach
             </select>
-            <button type="submit" class="btn btn-success mt-3">Keresés</button>
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-12">
+                      <button type="submit" class="btn btn-success mt-3">Keresés</button>
+                </div>
+                <div class="col-12">
+                      <a href="{{route("hangszerpiac")}}" class="btn btn-danger mt-3">Törlés</a>
+                </div>
+              </div>
+            </div>
+            
+            
             
           </form>
-          <form method="POST">
-            <button type="submit" class="btn btn-danger mt-3">Törlés</button>
-
-          </form>
+          
 
         </div>
     </div>
@@ -50,7 +66,7 @@
           @foreach ( $adat as $hangszer )
             <div class= "col-3">
             <div class="card " style="width:200px;">
-              <img class="card-img-top" height= "200px" width="200px" src="{{$hangszer->kep}}" alt="hangszerkep">
+              <img height = "300px" width = "200px" class="card-img-top" src="{{asset("img/hangszer/".$hangszer->kep)}}" alt="hangszerkep">
               <div class="card-body">
                 <h4 class="card-title text-center">{{$hangszer->nev}}</h4>
     
@@ -74,6 +90,7 @@
     </div>
   </div>
 </div>
+
 <script>
   const ar = document.getElementById("arInput");
   const iras = document.getElementById("kiirtAr");
