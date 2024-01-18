@@ -10,7 +10,8 @@ class profilController extends Controller
 {
     public function profilBetoltes(){
         $user = Auth::user();
-        $tanar = Tanar::find($user->uid);
+        $tanar = Tanar::find(1);
+        
         if($user){
             
             

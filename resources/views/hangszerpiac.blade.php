@@ -4,7 +4,7 @@
 
 <div class="container">
   <div class="row">
-    <div class="col-3">
+    <div class="col-12 col-xl-3">
         <div class = "bg-white p-4 rounded">
 
           <form class = "text-success" method="POST">
@@ -45,10 +45,10 @@
             <div class="container-fluid">
               <div class="row">
                 <div class="col-12">
-                      <button type="submit" class="btn btn-success mt-3">Keresés</button>
+                      <button type="submit" class="btn btn-success form-control mt-3">Keresés</button>
                 </div>
                 <div class="col-12">
-                      <a href="{{route("hangszerpiac")}}" class="btn btn-danger mt-3">Törlés</a>
+                      <a href="{{route("hangszerpiac")}}" class="btn btn-danger w-100 mt-3">Törlés</a>
                 </div>
               </div>
             </div>
@@ -60,14 +60,15 @@
 
         </div>
     </div>
-    <div class="col-9">
+    <div class="col-12 col-xl-9">
       <div class="container">
         <div class="row">
-          @foreach ( $adat as $hangszer )
-            <div class= "col-3">
-            <div class="card " style="width:200px;">
-              <img height = "300px" width = "200px" class="card-img-top" src="{{asset("img/hangszer/".$hangszer->kep)}}" alt="hangszerkep">
-              <div class="card-body">
+          
+            @foreach ( $adat as $hangszer )
+            
+            <div class="card mt-3 container-fluid col-12 col-md-6 col-xl-3" >
+              <img class="card-img-top" src="{{asset("img/hangszer/".$hangszer->kep)}}" alt="hangszerkep">
+              <div class="card-footer">
                 <h4 class="card-title text-center">{{$hangszer->nev}}</h4>
     
                 <div class="card-text text-center">
@@ -83,12 +84,21 @@
                 </div>
               </div>
             </div>              
-          </div>            
-            @endforeach       
+                      
+            @endforeach
+           
+            
+                   
         </div>                
         </div>
     </div>
   </div>
+<div class="d-flex justify-content-end">
+                <div>
+                  {{$adat->links()}}
+                </div>
+              </div>
+  
 </div>
 
 <script>
@@ -98,4 +108,9 @@
     iras.textContent= ar.value;
   });
 </script>
+<style>
+  .page-link {
+      color: #28a745; /* Bootstrap's .text-success color */
+  }
+  </style>
 @endsection

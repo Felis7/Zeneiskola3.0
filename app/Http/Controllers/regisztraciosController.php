@@ -43,7 +43,9 @@ class regisztraciosController extends Controller
         $tanarok->save();
        // Mail::to($req->input("email"))->send(new SendEmail("http://localhost/Zeneiskola/public/register/confirm/".$token));
 
-        return redirect()->route("profil")->with("success","A regisztráció sikeresen megtörtént".$kuldes->uid);
+       $tanarok = Tanar::inRandomOrder()->limit(6);
+       $tanarok->where("users.admin_vertificated", "0");
+       return view('welcome',['tanarok' => $tanarok]);
     }
     public function confirm($token){
         $confirm = regisztracioModel::where("remember_token",$token)->first();

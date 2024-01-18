@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Storage;
 class piacController extends Controller
 {
     public function adatBetolto(){
-        $adat = piacModel::all();
+        $adat = piacModel::paginate(4);
         $min = DB::table("hangszerpiac")->min("ar");
         $max =  DB::table("hangszerpiac")->max("ar");
         $telepules = telepulesModel::all();
@@ -75,7 +75,7 @@ class piacController extends Controller
     public function hangszerInfBeker($id){
         $hangszer = piacModel::find($id);
         if(!$hangszer){
-            return redirect ("hanszerpiac")->with("error", "Valami hiba történt!");
+            return redirect ("hangszerpiac")->with("error", "Valami hiba történt!");
         }return view("hangszerekInformacio", ["adat"=>$hangszer]);
     }
     public function hangszerKereses(Request $req){
